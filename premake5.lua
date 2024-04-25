@@ -1,6 +1,3 @@
--- premake5.lua
-
--- Define project
 project "spdlog"
     language "C++"
     cppdialect "C++20"
@@ -20,8 +17,10 @@ project "spdlog"
     }
 
     filter "system:windows"
+        systemversion "latest"
         defines {
-            "_CRT_SECURE_NO_WARNINGS"
+            "_CRT_SECURE_NO_WARNINGS",
+            "SPDLOG_COMPILED_LIB"
         }
 
     filter "configurations:Debug"
@@ -30,7 +29,7 @@ project "spdlog"
 
     filter "configurations:Release"
         runtime "Release"
-        optimize "On"
+        optimize "speed"
     
     filter "configurations:Dist"
 		runtime "Release"
