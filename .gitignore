@@ -74,6 +74,10 @@ spdlogConfig.cmake
 spdlogConfigVersion.cmake
 compile_commands.json
 
+# Binaries
+bin
+bin-int
+
 # idea
 .idea/
 .cache/

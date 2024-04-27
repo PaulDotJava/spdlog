@@ -5,6 +5,7 @@ project "spdlog"
     warnings "off"
 
     targetdir ("bin/" .. outputdir .. "/%{prj.name}")
+    objdir ("/bin-int/" .. outputdir .. "/%{prj.name}")
 
     files {
         "src/*.cpp",
