@@ -24,6 +24,9 @@ project "spdlog"
             "SPDLOG_COMPILED_LIB"
         }
 
+    filer "system:linux"
+        defines { "SPDLOG_COMPILED_LIB" }
+
     filter "configurations:Debug"
         runtime "Debug"
         symbols "On"
