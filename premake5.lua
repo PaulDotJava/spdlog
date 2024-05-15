@@ -24,7 +24,7 @@ project "spdlog"
             "SPDLOG_COMPILED_LIB"
         }
 
-    filer "system:linux"
+    filter "system:linux"
         defines { "SPDLOG_COMPILED_LIB" }
 
     filter "configurations:Debug"
